@@ -15,15 +15,15 @@ let text2Esp = `
 <section class="aboutHsec">
     <section class="sectCardCont">
         <div class="card sectCard">
-            <img class=" sectCardImg" src="/img/icons/icon1.png" alt="Card image cap">
+            <img class=" sectCardImg" src="img/icons/icon1.png" alt="Card image cap">
             <h5 class="sectCardTitle">Desarrollo y Maquetado de estructuras web</h5>
         </div>
         <div class="card sectCard">
-            <img class=" sectCardImg" src="/img/icons/icon2.png" alt="Card image cap">
+            <img class=" sectCardImg" src="img/icons/icon2.png" alt="Card image cap">
             <h5 class="sectCardTitle">Codificar con lenguajes de programacion</h5>
         </div>
         <div class="card sectCard">
-            <img class=" sectCardImg" src="/img/icons/icon3.png" alt="Card image cap">
+            <img class=" sectCardImg" src="img/icons/icon3.png" alt="Card image cap">
             <h5 class="sectCardTitle">Implementación de distintos tipos deLibrerias</h5>
         </div>
     </section>
@@ -38,21 +38,21 @@ let text3Esp = `
 <section class="aboutHsec">
     <section class="sectCardCont">
         <div class="card sectCard">
-            <img class="card-img-top sectCardImg" src="/img/contact/Linkedin.png" alt="Linkedin">
+            <img class="card-img-top sectCardImg" src="img/contact/Linkedin.png" alt="Linkedin">
             <div class="card-body">
                 <h5 class="card-title sectCardTitle">Linkedin</h5>
               <p class="card-text sectCardText">linkedin.com/in/agustinfcoiro</p>
             </div>
         </div>
         <div class="card sectCard">
-            <img class="card-img-top sectCardImg" src="/img/contact/email.png" alt="e-mail">
+            <img class="card-img-top sectCardImg" src="img/contact/email.png" alt="e-mail">
             <div class="card-body">
                 <h5 class="card-title sectCardTitle">e-mail</h5>
               <p class="card-text sectCardText">agustinfcoiro@gmail.com</p>
             </div>
         </div>
         <div class="card sectCard">
-            <img class="card-img-top sectCardImg" src="/img/contact/Github.png" alt="Github">
+            <img class="card-img-top sectCardImg" src="img/contact/Github.png" alt="Github">
             <div class="card-body">
                 <h5 class="card-title sectCardTitle">Github</h5>
               <p class="card-text sectCardText">https://github.com/AFCoiro</p>
