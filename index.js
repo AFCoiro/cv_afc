@@ -61,7 +61,6 @@ for ( const myL of myLi){
 
 //for con escuchador para asignar la clase activa en el Li seleccionado
 for (let i = 0; i < myLi.length; i++) {
-    // mainEmpty.innerHTML = `${main[i]}`;
     myLi[i].addEventListener("click", function() {
       let current = document.getElementsByClassName("activeLi");
       current[0].className = current[0].className.replace(" activeLi", "");

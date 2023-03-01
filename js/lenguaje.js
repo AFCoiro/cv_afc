@@ -123,10 +123,3 @@ I'll get back to you as soon as possible! 👋</p>
       </div>
 </section>
 </article>`;
-
-/*      <div class="card sectCard" style="width: 18rem;">
-<img class="card-img-top sectCardImg" src="..." alt="Card image cap">
-<div class="card-body">
-    <h5 class="card-title sectCardTitle">Implementation of libraries</h5>
-</div>
-</div>*/
