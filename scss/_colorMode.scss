@@ -1,0 +1,84 @@
+@import "var";
+
+.lightMode {
+    background-color:$light-color;
+    .myHeader{
+        background-color: $light-color-hv;
+        .myUl{
+            .myLi{
+                color: $dark-color-hv;
+                border-bottom: $light-color-hv solid 3px;
+                &:hover{
+                    color: $dark-color;
+                    border-bottom: $primary-color-hv solid 3px; 
+                }
+                &:active{
+                    color: $light-color;
+                    border-bottom: $primary-color-hv solid 3px; 
+                }
+            }
+            .activeLi{
+                color: $dark-color;
+                border-bottom: $primary-color-hv solid 3px; 
+            }
+        }
+        .myNavRight{
+            .myCv{
+                color: $dark-color-hv;
+                border-radius: 16px;
+                padding: 4px;
+                background-color: $primary-color-hv;
+                transition: 0.5s;
+                &:hover{
+                    color: $primary-color;
+                    background-color: $light-color;
+                }
+            }
+            .cToggle1{
+                background-color: $light-color;
+                &:checked{
+                    background-color: $primary-color-hv;
+                }
+            }
+        }
+    }
+    h1{
+        color: $primary-color;
+    }
+    .contLang{
+        .SecondP{
+            color: $dark-color-hv ;
+        }
+    }
+//Pestañas
+    .mainEmpty{
+        .mainCont{
+            p{
+                color: $dark-color-hv;
+            }
+            .aboutH1{
+                color: $primary-color-hv;
+            }
+            .aboutHsec{
+                p{
+                    color: $dark-color-hv;
+                } 
+            }
+            .sectCardCont{
+                .sectCard{
+                    background-color: $light-color-hv;
+                    .sectCardText{
+                        color: $light-color;
+                    }
+                }
+            }
+            .knowH2{
+                color: $primary-color-hv;
+            }
+        }
+     }
+     .myFooter{
+        background-color: $light-color-hv;
+        color: $dark-color-hv;
+     }
+  }

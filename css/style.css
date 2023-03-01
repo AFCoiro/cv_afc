@@ -1,0 +1,417 @@
+.lightMode {
+  background-color: #e8f1f3;
+}
+.lightMode .myHeader {
+  background-color: #c7c7cc;
+}
+.lightMode .myHeader .myUl .myLi {
+  color: #003459;
+  border-bottom: #c7c7cc solid 3px;
+}
+.lightMode .myHeader .myUl .myLi:hover {
+  color: #00171f;
+  border-bottom: #00a8e8 solid 3px;
+}
+.lightMode .myHeader .myUl .myLi:active {
+  color: #e8f1f3;
+  border-bottom: #00a8e8 solid 3px;
+}
+.lightMode .myHeader .myUl .activeLi {
+  color: #00171f;
+  border-bottom: #00a8e8 solid 3px;
+}
+.lightMode .myHeader .myNavRight .myCv {
+  color: #003459;
+  border-radius: 16px;
+  padding: 4px;
+  background-color: #00a8e8;
+  transition: 0.5s;
+}
+.lightMode .myHeader .myNavRight .myCv:hover {
+  color: #007ea7;
+  background-color: #e8f1f3;
+}
+.lightMode .myHeader .myNavRight .cToggle1 {
+  background-color: #e8f1f3;
+}
+.lightMode .myHeader .myNavRight .cToggle1:checked {
+  background-color: #00a8e8;
+}
+.lightMode h1 {
+  color: #007ea7;
+}
+.lightMode .contLang .SecondP {
+  color: #003459;
+}
+.lightMode .mainEmpty .mainCont p {
+  color: #003459;
+}
+.lightMode .mainEmpty .mainCont .aboutH1 {
+  color: #00a8e8;
+}
+.lightMode .mainEmpty .mainCont .aboutHsec p {
+  color: #003459;
+}
+.lightMode .mainEmpty .mainCont .sectCardCont .sectCard {
+  background-color: #c7c7cc;
+}
+.lightMode .mainEmpty .mainCont .sectCardCont .sectCard .sectCardText {
+  color: #e8f1f3;
+}
+.lightMode .mainEmpty .mainCont .knowH2 {
+  color: #00a8e8;
+}
+.lightMode .myFooter {
+  background-color: #c7c7cc;
+  color: #003459;
+}
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  list-style: none;
+}
+* a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #003459;
+}
+body .esconder {
+  opacity: 0;
+  transition: opacity 2.5s;
+}
+body h1 {
+  color: #e8f1f3;
+}
+body p {
+  color: #e8f1f3;
+}
+body .myHeader {
+  background-color: #00171f;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: strech;
+  padding: 0.5%;
+}
+body .myHeader .myLogo {
+  width: 14%;
+}
+body .myHeader .myUl {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 0;
+}
+body .myHeader .myUl .myLi {
+  color: #c7c7cc;
+  border-bottom: #00171f solid 3px;
+  font-weight: 600;
+  transition: 0.5s;
+}
+body .myHeader .myUl .myLi:hover {
+  color: #e8f1f3;
+  border-bottom: #00a8e8 solid 3px;
+}
+body .myHeader .myUl .myLi:active {
+  color: #e8f1f3;
+  border-bottom: #00a8e8 solid 3px;
+}
+body .myHeader .myUl .activeLi {
+  border-bottom: 3px solid #007ea7;
+  color: #e8f1f3;
+  font-weight: bold;
+}
+body .myHeader .myNavRight {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+body .myHeader .myNavRight .myCv {
+  color: #e8f1f3;
+  border-radius: 16px;
+  padding: 2px 8px 2px 8px;
+  background-color: #007ea7;
+  transition: 0.5s;
+}
+body .myHeader .myNavRight .myCv:hover {
+  background-color: #00a8e8;
+}
+body .myHeader .myNavRight .cToggle1 {
+  background-color: #e8f1f3;
+}
+body .myHeader .myNavRight .cToggle1:checked {
+  background-color: #007ea7;
+}
+body .startPage {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding-top: 5%;
+}
+body .startPage .firstH1 {
+  font-size: 100px;
+  font-weight: 600;
+}
+body .startPage .firstP {
+  font-size: x-large;
+  color: #00a8e8;
+}
+body .startPage .contLang {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 5% 15% 0 0;
+}
+body .startPage .contLang .SecondP {
+  font-size: 30px;
+}
+body .startPage .contLang .lang {
+  display: flex;
+}
+body .startPage .contLang .lang .imgLang {
+  width: 50%;
+}
+body .startPage .imgProf {
+  width: 80%;
+  border-radius: 50%;
+}
+body .myFooter {
+  background-color: #007ea7;
+  color: #e8f1f3;
+  text-align: center;
+  width: 100%;
+  bottom: 0px;
+  position: fixed;
+  margin-top: 10%;
+}
+
+@media (max-width: 600px) {
+  body .esconder {
+    transition: opacity 0s;
+  }
+  body .myHeader {
+    background-color: #00171f;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.5%;
+  }
+  body .myHeader .myLogo {
+    width: 40%;
+  }
+  body .myHeader .myUl {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  body .myHeader .myUl .myLi {
+    border-bottom: #00171f solid 3px;
+  }
+  body .myHeader .myNavRight {
+    order: -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  body .myHeader .myNavRight .myCv {
+    color: #e8f1f3;
+    border-radius: 16px;
+    padding: 2px 6px 2px 6px;
+  }
+  body .startPage {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  body .startPage .firstH1 {
+    font-size: 50px;
+    font-weight: 600;
+  }
+  body .startPage .firstP {
+    font-size: x-large;
+  }
+  body .startPage .contLang {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  body .startPage .contLang .SecondP {
+    font-size: 30px;
+  }
+  body .startPage .contLang .lang {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  body .startPage .contLang .lang .imgLang {
+    width: 50%;
+  }
+  body .startPage .imgProf {
+    width: 50%;
+    border-radius: 50%;
+  }
+  body .myFooter {
+    position: relative;
+  }
+}
+.mainEmpty .mainCont {
+  padding: 5%;
+  text-align: center;
+}
+.mainEmpty .mainCont .aboutH1 {
+  font-size: 100px;
+  font-weight: 600;
+  padding-bottom: 5%;
+}
+.mainEmpty .mainCont .aboutHsec {
+  font-size: 30px;
+}
+
+@media (max-width: 600px) {
+  .mainEmpty .mainCont .aboutH1 {
+    font-size: 30px;
+    padding-bottom: 5%;
+  }
+  .mainEmpty .mainCont .aboutHsec {
+    font-size: 25px;
+  }
+}
+.mainEmpty {
+  width: 100%;
+}
+.mainEmpty .mainCont {
+  font-size: 30px;
+}
+.mainEmpty .mainCont .sectCardCont {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+}
+.mainEmpty .mainCont .sectCardCont .sectCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(0, 23, 31, 0.5490196078);
+  text-align: center;
+  width: 25%;
+  height: 220px;
+}
+.mainEmpty .mainCont .sectCardCont .sectCard .sectCardImg {
+  width: 35%;
+  opacity: 0.8;
+  transition: 0.5s;
+}
+.mainEmpty .mainCont .sectCardCont .sectCard .sectCardImg:hover {
+  opacity: 1;
+  width: 40%;
+}
+.mainEmpty .mainCont .sectCardCont .sectCard .sectCardTitle {
+  color: #e8f1f3;
+  font-weight: 600;
+}
+.mainEmpty .mainCont .sectCardCont .sectCard .sectCardText {
+  font-size: 20px;
+}
+.mainEmpty .mainCont .knowH2 {
+  padding: 5% 0 0 0;
+  color: #e8f1f3;
+  font-size: 30px;
+}
+.mainEmpty .contImg1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: normal;
+}
+.mainEmpty .contImg1 .divSubcnt1 {
+  width: 100%;
+}
+.mainEmpty .contImg1 .divSubcnt1 .imgKno {
+  vertical-align: middle;
+  width: 80%;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+  filter: grayscale(1);
+  opacity: 0.6;
+  transition: 0.5s;
+}
+.mainEmpty .contImg1 .divSubcnt1 .imgKno:hover {
+  opacity: 1;
+  width: 90%;
+  filter: grayscale(0);
+  position: relative;
+}
+
+@media (max-width: 600px) {
+  .mainEmpty {
+    width: 100%;
+  }
+  .mainEmpty .mainCont {
+    font-size: 30px;
+  }
+  .mainEmpty .mainCont .sectCardCont {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+  }
+  .mainEmpty .mainCont .sectCardCont .sectCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10%;
+    text-align: center;
+    width: 70%;
+    height: 220px;
+  }
+  .mainEmpty .mainCont .sectCardCont .sectCard .sectCardImg {
+    width: 45%;
+  }
+  .mainEmpty .mainCont .sectCardCont .sectCard .sectCardTitle {
+    color: #e8f1f3;
+    font-weight: 600;
+  }
+  .mainEmpty .mainCont .sectCardCont .sectCard .sectCardText {
+    font-size: 15px;
+    display: none;
+  }
+  .mainEmpty .mainCont .knowH2 {
+    font-size: 20px;
+  }
+  .mainEmpty .contImg1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .mainEmpty .contImg1 .divSubcnt1 .imgKno {
+    width: 20%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

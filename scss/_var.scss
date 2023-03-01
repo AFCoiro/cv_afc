@@ -1,0 +1,23 @@
+
+//var colors
+$primary-color: #007ea7;
+$primary-color-hv:#00a8e8;
+$dark-color:#00171f;
+$dark-color-hv:#003459;
+$dark-color-t:#00171f8c;
+$light-color:#e8f1f3;
+$light-color-hv:#c7c7cc;
+
+
+//mixins
+
+@mixin myDisplayFlex($display, $direction, $justify,$align) {
+    display: $display;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    }
+      
+
+
+      

@@ -1,0 +1,31 @@
+ @import "var";
+
+ .mainEmpty{
+    .mainCont{
+        padding: 5%;
+        text-align: center;
+        .aboutH1{
+            font-size: 100px;
+            font-weight: 600;
+            padding-bottom: 5%;
+        }
+        .aboutHsec{
+            font-size: 30px;
+        }
+
+    }
+ }
+
+ @media (max-width: 600px){
+    .mainEmpty{
+        .mainCont{
+            .aboutH1{
+                font-size: 30px;
+                padding-bottom: 5%;
+            }
+            .aboutHsec{
+                font-size: 25px;
+            }
+        }
+     }
+ }
