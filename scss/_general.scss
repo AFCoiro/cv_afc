@@ -11,7 +11,11 @@
     }
 }
 body{
+    width: 100%;
     background-color: $dark-color-hv;
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
     .esconder{
         opacity: 0;
         transition: opacity 2.5s;
@@ -112,8 +116,7 @@ body{
         text-align: center;
         width: 100%;
         bottom:0px;
-        position:fixed;
-        margin-top: 10%;
+        margin-top: 5%;
     }
     
 }
@@ -144,7 +147,7 @@ body{
                     .myCv{
                         color: $light-color;
                         border-radius: 16px;
-                        padding: 2px 6px 2px 6px;
+                        padding: 2px 4px 2px 4px;
                     }
                 }
             }
