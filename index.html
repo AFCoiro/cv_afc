@@ -11,7 +11,7 @@
     <meta property="og:description" content="CV Web-app de Agustín Coiro, Desarrollador Front-end en React">
     <meta property="og:url" content="url.com.ar">
     <!-- editar url -->
-    <meta property="og:image" content="/img/profile.jpg">
+    <meta property="og:image" content="img/profile.jpg">
     <meta property="og:locale" content="es_ES">
     <meta property="og:site_name" content=" - AC - ">
 
@@ -30,19 +30,21 @@
 <body>
     <header class="container-fluid myHeader esconder">
         <nav class="navbar navbar-expand-lg ">
-            <a class="navbar-brand wip_logo col-3" href="index.html"><img src="img/logo.png" class="myLogo" alt="Logo Agustín Coiro"></a>
-            <button class="navbar-toggler navbar-dark bg-dark" type="button" data-bs-toggle="collapse"        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse navRight myNavbar col-6" id="navbarNav">
+            <div class="col-md-3">
+                <a class="navbar-brand wip_logo" href="index.html"><img src="img/logo.png" class="myLogo" alt="Logo Agustín Coiro"></a>
+                <button class="navbar-toggler navbar-dark bg-dark" type="button" data-bs-toggle="collapse"        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse navRight myNavbar col-md-6" id="navbarNav">
                 <ul class="navbar-nav ml-auto myUl">
-                                <!-- <a class="nav-link active" aria-current="page"  -->
                         <li class="nav-item"><a href="#" class="nav-link myLi activeLi">Acerca de mí</a></li>
                         <li class="nav-item"><a href="#" class="nav-link myLi">Conocimientos</a></li>
                         <li class="nav-item"><a href="#" class="nav-link myLi">Contacto</a></li>
                 </ul>
             </div>
-            <div class="myNavRight col-3">
+            <div class="myNavRight col-md-3">
                 <a href="./img/Agustín Coiro_CV.pdf" download="Agustín Coiro_CV" class="myCv">Descarga CV</a>
                 <div class="form-check form-switch cToggle">
                     <input class="form-check-input cToggle1" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
