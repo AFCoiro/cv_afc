@@ -59,7 +59,7 @@
   color: #e8f1f3;
 }
 .lightMode .mainEmpty .mainCont .knowH2 {
-  color: #00a8e8;
+  color: #003459;
 }
 .lightMode .myFooter {
   background-color: #c7c7cc;
@@ -78,7 +78,11 @@
 }
 
 body {
+  width: 100%;
   background-color: #003459;
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
 }
 body .esconder {
   opacity: 0;
@@ -193,8 +197,7 @@ body .myFooter {
   text-align: center;
   width: 100%;
   bottom: 0px;
-  position: fixed;
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 @media (max-width: 600px) {
@@ -231,7 +234,7 @@ body .myFooter {
   body .myHeader .myNavRight .myCv {
     color: #e8f1f3;
     border-radius: 16px;
-    padding: 2px 6px 2px 6px;
+    padding: 2px 4px 2px 4px;
   }
   body .startPage {
     width: 100%;
@@ -273,9 +276,11 @@ body .myFooter {
     position: relative;
   }
 }
+.mainEmpty {
+  width: 100vh;
+}
 .mainEmpty .mainCont {
   padding: 5%;
-  text-align: center;
 }
 .mainEmpty .mainCont .aboutH1 {
   font-size: 100px;
@@ -347,6 +352,7 @@ body .myFooter {
 }
 .mainEmpty .contImg1 .divSubcnt1 {
   width: 100%;
+  height: 100px;
 }
 .mainEmpty .contImg1 .divSubcnt1 .imgKno {
   vertical-align: middle;
@@ -364,7 +370,7 @@ body .myFooter {
   position: relative;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 720px) {
   .mainEmpty {
     width: 100%;
   }
@@ -397,20 +403,31 @@ body .myFooter {
   }
   .mainEmpty .mainCont .sectCardCont .sectCard .sectCardText {
     font-size: 15px;
-    display: none;
   }
   .mainEmpty .mainCont .knowH2 {
     font-size: 20px;
   }
   .mainEmpty .contImg1 {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
   }
+  .mainEmpty .contImg1 .divSubcnt1 {
+    width: 33%;
+  }
   .mainEmpty .contImg1 .divSubcnt1 .imgKno {
-    width: 20%;
+    opacity: 1;
+    width: 80%;
+    vertical-align: auto;
+    padding: 5%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    filter: grayscale(0);
+  }
+  .mainEmpty .contImg1 .divSubcnt1 .imgKno:hover {
+    width: 80%;
   }
 }
 
