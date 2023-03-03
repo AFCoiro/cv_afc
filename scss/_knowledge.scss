@@ -41,6 +41,7 @@
       @include myDisplayFlex(flex,row, center,normal);
         .divSubcnt1{
           width: 100%;
+          height: 100px;
           .imgKno{
             vertical-align: middle;
             width: 80%;
@@ -62,7 +63,7 @@
 }
 
                   
-@media (max-width: 600px){
+@media (max-width: 720px){
   .mainEmpty{
     width: 100%;
     .mainCont{
@@ -85,7 +86,7 @@
             }
             .sectCardText{
               font-size: 15px;
-              display: none;
+              
             }
           }
       }
@@ -95,11 +96,21 @@
 
     }
     .contImg1{
-      @include myDisplayFlex(flex,column,center,center);
+      @include myDisplayFlex(flex,row,center,center);
       flex-wrap:wrap;
       .divSubcnt1{
+        width: 33%;
         .imgKno{
-          width: 20%;
+          opacity: 1;
+          width: 80%;
+          vertical-align:auto;
+          padding: 5%;
+          aspect-ratio: 3/2;
+          object-fit: contain;
+          filter: grayscale(0);
+          &:hover{
+            width: 80%;
+          }        
       }
       }
     }
