@@ -38,7 +38,7 @@ let text3Esp = `
 <section class="aboutHsec">
     <section class="sectCardCont">
         <div class="card sectCard">
-            <img class="card-img-top sectCardImg" src="img/contact/Linkedin.png" alt="Linkedin">
+            <img class="card-img-top sectCardImg" src="img/contact/linkedin.png" alt="Linkedin">
             <div class="card-body">
                 <h5 class="card-title sectCardTitle">Linkedin</h5>
                 <a href="https://www.linkedin.com/in/agustinfcoiro/" target="_blank"><p class="sectCardText">in/agustinfcoiro</p></a>
@@ -52,7 +52,7 @@ let text3Esp = `
             </div>
         </div>
         <div class="card sectCard">
-            <img class="card-img-top sectCardImg" src="img/contact/Github.png" alt="Github">
+            <img class="card-img-top sectCardImg" src="img/contact/github.png" alt="Github">
             <div class="card-body">
                 <h5 class="card-title sectCardTitle">Github</h5>
               <a href="https://github.com/AFCoiro" target="_blank"><p class="card-text sectCardText">github.com/AFCoiro</p></a>
@@ -101,7 +101,7 @@ let text3Ing = `
 I'll get back to you as soon as possible! 👋</p>
 <section class="sectCardCont">
       <div class="card sectCard" style="width: 18rem;">
-        <img class="card-img-top sectCardImg" src="img/contact/Linkedin.png" alt="linkedin">
+        <img class="card-img-top sectCardImg" src="img/contact/linkedin.png" alt="linkedin">
         <div class="card-body">
             <h5 class="card-title sectCardTitle">Linkedin</h5>
             <a href="https://www.linkedin.com/in/agustinfcoiro/" target="_blank"><p class="sectCardText">in/agustinfcoiro</p></a>
@@ -115,7 +115,7 @@ I'll get back to you as soon as possible! 👋</p>
         </div>
       </div>
       <div class="card sectCard" style="width: 18rem;">
-        <img class="card-img-top sectCardImg" src="img/contact/Github.png" alt="github">
+        <img class="card-img-top sectCardImg" src="img/contact/github.png" alt="github">
         <div class="card-body">
             <h5 class="card-title sectCardTitle">Github</h5>
             <a href="https://github.com/AFCoiro" target="_blank"><p class="card-text sectCardText">github.com/AFCoiro</p></a>
