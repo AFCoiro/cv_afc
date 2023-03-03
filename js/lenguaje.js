@@ -15,15 +15,15 @@ let text2Esp = `
 <section class="aboutHsec">
     <section class="sectCardCont">
         <div class="card sectCard">
-            <img class=" sectCardImg" src="/img/icons/icon1.png" alt="Card image cap">
+            <img class=" sectCardImg" src="img/icons/icon1.png" alt="Desarrollo y Maquetado">
             <h5 class="sectCardTitle">Desarrollo y Maquetado de estructuras web</h5>
         </div>
         <div class="card sectCard">
-            <img class=" sectCardImg" src="/img/icons/icon2.png" alt="Card image cap">
+            <img class=" sectCardImg" src="img/icons/icon2.png" alt="Codificar con lenguajes">
             <h5 class="sectCardTitle">Codificar con lenguajes de programacion</h5>
         </div>
         <div class="card sectCard">
-            <img class=" sectCardImg" src="/img/icons/icon3.png" alt="Card image cap">
+            <img class=" sectCardImg" src="img/icons/icon3.png" alt="tipos deLibrerias">
             <h5 class="sectCardTitle">Implementación de distintos tipos deLibrerias</h5>
         </div>
     </section>
@@ -38,21 +38,21 @@ let text3Esp = `
 <section class="aboutHsec">
     <section class="sectCardCont">
         <div class="card sectCard">
-            <img class="card-img-top sectCardImg" src="/img/contact/Linkedin.png" alt="Linkedin">
+            <img class="card-img-top sectCardImg" src="img/contact/Linkedin.png" alt="Linkedin">
             <div class="card-body">
                 <h5 class="card-title sectCardTitle">Linkedin</h5>
-                <a href="https://www.linkedin.com/in/agustinfcoiro/" target="_blank"><p class="sectCardText">linkedin.com/in/agustinfcoiro</p></a>
+                <a href="https://www.linkedin.com/in/agustinfcoiro/" target="_blank"><p class="sectCardText">in/agustinfcoiro</p></a>
             </div>
         </div>
         <div class="card sectCard">
-            <img class="card-img-top sectCardImg" src="/img/contact/email.png" alt="e-mail">
+            <img class="card-img-top sectCardImg" src="img/contact/email.png" alt="e-mail">
             <div class="card-body">
                 <h5 class="card-title sectCardTitle">e-mail</h5>
                 </html> <a href="mailto:agustinfcoiro@gmail.com" target="_blank"><p class="card-text sectCardText">agustinfcoiro@gmail.com</p></a>
             </div>
         </div>
         <div class="card sectCard">
-            <img class="card-img-top sectCardImg" src="/img/contact/Github.png" alt="Github">
+            <img class="card-img-top sectCardImg" src="img/contact/Github.png" alt="Github">
             <div class="card-body">
                 <h5 class="card-title sectCardTitle">Github</h5>
               <a href="https://github.com/AFCoiro" target="_blank"><p class="card-text sectCardText">github.com/AFCoiro</p></a>
@@ -78,15 +78,15 @@ let text2Ing = `
 <section class="aboutHsec">
     <section class="sectCardCont">
         <div class="card sectCard">
-            <img class=" sectCardImg" src="/img/icons/icon1.png" alt="Card image cap">
+            <img class=" sectCardImg" src="img/icons/icon1.png" alt="Development and Layout">
             <h5 class="sectCardTitle">Development and Layout of web structures</h5>
         </div>
         <div class="card sectCard">
-            <img class=" sectCardImg" src="/img/icons/icon2.png" alt="Card image cap">
+            <img class=" sectCardImg" src="img/icons/icon2.png" alt="programming languages">
             <h5 class="sectCardTitle">Code with programming languages</h5>
         </div>
         <div class="card sectCard">
-            <img class=" sectCardImg" src="/img/icons/icon3.png" alt="Card image cap">
+            <img class=" sectCardImg" src="img/icons/icon3.png" alt="Implementation of Libraries">
             <h5 class="sectCardTitle">Implementation of different kinds of Libraries</h5>
         </div>
     </section>
@@ -101,21 +101,21 @@ let text3Ing = `
 I'll get back to you as soon as possible! 👋</p>
 <section class="sectCardCont">
       <div class="card sectCard" style="width: 18rem;">
-        <img class="card-img-top sectCardImg" src="/img/contact/Linkedin.png" alt="linkedin">
+        <img class="card-img-top sectCardImg" src="img/contact/Linkedin.png" alt="linkedin">
         <div class="card-body">
             <h5 class="card-title sectCardTitle">Linkedin</h5>
-            <a href="https://www.linkedin.com/in/agustinfcoiro/" target="_blank"><p class="sectCardText">linkedin.com/in/agustinfcoiro</p></a>
+            <a href="https://www.linkedin.com/in/agustinfcoiro/" target="_blank"><p class="sectCardText">in/agustinfcoiro</p></a>
         </div>
       </div>
       <div class="card sectCard" style="width: 18rem;">
-        <img class="card-img-top sectCardImg" src="/img/contact/email.png" alt="e-mail">
+        <img class="card-img-top sectCardImg" src="img/contact/email.png" alt="e-mail">
         <div class="card-body">
             <h5 class="card-title sectCardTitle">e-mail</h5>
             </html> <a href="mailto:agustinfcoiro@gmail.com" target="_blank"><p class="card-text sectCardText">agustinfcoiro@gmail.com</p></a>
         </div>
       </div>
       <div class="card sectCard" style="width: 18rem;">
-        <img class="card-img-top sectCardImg" src="/img/contact/Github.png" alt="github">
+        <img class="card-img-top sectCardImg" src="img/contact/Github.png" alt="github">
         <div class="card-body">
             <h5 class="card-title sectCardTitle">Github</h5>
             <a href="https://github.com/AFCoiro" target="_blank"><p class="card-text sectCardText">github.com/AFCoiro</p></a>
