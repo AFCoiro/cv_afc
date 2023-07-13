@@ -22,10 +22,11 @@ function fnKnow() {
   arrayImg.forEach( mImg =>{
     const divSubcnt = document.createElement('div');
     divSubcnt.setAttribute('class','divSubcnt1');
-    divSubcnt.innerHTML += `<img src="./img/skills/${mImg}.png" alt="${mImg}" class="imgKno">`;
+    divSubcnt.innerHTML += `<div class="contImgS"><img src="./img/skills/${mImg}.png" alt="${mImg}" class="imgKno">
+                            <h5 class="nameSkill">${mImg}</h5></div>`;
     divCont1.append(divSubcnt);
     }
-  )
+  ) 
   mainEmpty.append(divCont1);
 }
 

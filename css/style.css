@@ -20,21 +20,21 @@
   color: #00171f;
   border-bottom: #00a8e8 solid 3px;
 }
-.lightMode .myHeader .myNavRight .myCv {
+.lightMode .myHeader .NavCvDm .myCv {
   color: #003459;
   border-radius: 16px;
   padding: 4px;
   background-color: #00a8e8;
   transition: 0.5s;
 }
-.lightMode .myHeader .myNavRight .myCv:hover {
+.lightMode .myHeader .NavCvDm .myCv:hover {
   color: #007ea7;
   background-color: #e8f1f3;
 }
-.lightMode .myHeader .myNavRight .cToggle1 {
+.lightMode .myHeader .NavCvDm .cToggle1 {
   background-color: #e8f1f3;
 }
-.lightMode .myHeader .myNavRight .cToggle1:checked {
+.lightMode .myHeader .NavCvDm .cToggle1:checked {
   background-color: #00a8e8;
 }
 .lightMode h1 {
@@ -56,9 +56,18 @@
   background-color: #c7c7cc;
 }
 .lightMode .mainEmpty .mainCont .sectCardCont .sectCard .sectCardText {
-  color: #e8f1f3;
+  color: #00a8e8;
+}
+.lightMode .mainEmpty .mainCont .sectCardCont .sectCard .sectCardTitle {
+  color: #00a8e8;
+}
+.lightMode .mainEmpty .mainCont .sectCardCont .sectCard .sectCardTitle2 {
+  color: #00a8e8;
 }
 .lightMode .mainEmpty .mainCont .knowH2 {
+  color: #003459;
+}
+.lightMode .mainEmpty .contImg1 .divSubcnt1 .contImgS .nameSkill {
   color: #003459;
 }
 .lightMode .myFooter {
@@ -80,13 +89,19 @@
 body {
   width: 100%;
   background-color: #003459;
+  /* background: linear-gradient(
+       to bottom right,
+       $light-color 0%,
+       $light-color 50%,                                                                 
+       $dark-color-hv 50%,
+       $dark-color-hv 100%
+   );*/
   display: grid;
   min-height: 100vh;
   grid-template-rows: auto 1fr auto;
 }
 body .esconder {
   opacity: 0;
-  transition: opacity 2.5s;
 }
 body h1 {
   color: #e8f1f3;
@@ -98,12 +113,17 @@ body .myHeader {
   background-color: #00171f;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  align-items: strech;
+  justify-content: center;
+  align-items: space-around;
   padding: 0.5%;
 }
-body .myHeader .myLogo {
-  width: 14%;
+body .myHeader .myLogoCont .myLogo {
+  width: 30%;
+}
+@media (min-width: 768px) {
+  body .myHeader .myLogoCont .myLogo {
+    width: 80px;
+  }
 }
 body .myHeader .myUl {
   width: 100%;
@@ -133,63 +153,97 @@ body .myHeader .myUl .activeLi {
   color: #e8f1f3;
   font-weight: bold;
 }
-body .myHeader .myNavRight {
+body .myHeader .NavCvDm {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  gap: 10%;
 }
-body .myHeader .myNavRight .myCv {
+@media (min-width: 768px) {
+  body .myHeader .NavCvDm {
+    order: 1;
+  }
+}
+body .myHeader .NavCvDm .myCv {
   color: #e8f1f3;
   border-radius: 16px;
-  padding: 2px 8px 2px 8px;
+  padding: 4px;
   background-color: #007ea7;
   transition: 0.5s;
 }
-body .myHeader .myNavRight .myCv:hover {
+body .myHeader .NavCvDm .myCv:hover {
   background-color: #00a8e8;
 }
-body .myHeader .myNavRight .cToggle1 {
+body .myHeader .NavCvDm .cToggle1 {
   background-color: #e8f1f3;
 }
-body .myHeader .myNavRight .cToggle1:checked {
+body .myHeader .NavCvDm .cToggle1:checked {
   background-color: #007ea7;
 }
 body .startPage {
   width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: flex-start;
-  padding-top: 5%;
+  text-align: center;
 }
-body .startPage .firstH1 {
-  font-size: 100px;
+body .startPage .section1 {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+body .startPage .section1 .firstH1 {
+  color: #e8f1f3;
+  font-size: 50px;
+  padding-bottom: 10px;
+}
+body .startPage .section1 .firstH1 .myName {
+  color: #00a8e8;
   font-weight: 600;
 }
-body .startPage .firstP {
-  font-size: x-large;
+body .startPage .section1 .firstP {
+  font-size: 25px;
+  font-weight: 600;
   color: #00a8e8;
+  padding-top: 10px;
 }
-body .startPage .contLang {
+body .startPage .section2 {
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .startPage .section2 .contLang {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  padding: 5% 15% 0 0;
 }
-body .startPage .contLang .SecondP {
-  font-size: 30px;
+body .startPage .section2 .contLang .SecondP {
+  font-size: 25px;
 }
-body .startPage .contLang .lang {
+body .startPage .section2 .contLang .lang {
   display: flex;
+  justify-content: center;
+  gap: 5%;
 }
-body .startPage .contLang .lang .imgLang {
-  width: 50%;
+body .startPage .section2 .contLang .lang .myLang {
+  width: 180px;
+  height: 80px;
+  background-color: #e8f1f3;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .startPage .section2 .contLang .lang .myLang .imgLang {
+  width: 20%;
 }
 body .startPage .imgProf {
   width: 80%;
   border-radius: 50%;
+  border: solid 6px #00a8e8;
 }
 body .myFooter {
   background-color: #007ea7;
@@ -200,84 +254,166 @@ body .myFooter {
   margin-top: 5%;
 }
 
-@media (max-width: 600px) {
-  body .esconder {
-    transition: opacity 0s;
+@media (min-width: 768px) {
+  body h1 {
+    color: #e8f1f3;
+  }
+  body p {
+    color: #e8f1f3;
   }
   body .myHeader {
     background-color: #00171f;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: center;
+    align-items: space-around;
     padding: 0.5%;
   }
-  body .myHeader .myLogo {
-    width: 40%;
+  body .myHeader .myLogoCont .myLogo {
+    width: 30%;
   }
+}
+@media (min-width: 768px) and (min-width: 768px) {
+  body .myHeader .myLogoCont .myLogo {
+    width: 80px;
+  }
+}
+@media (min-width: 768px) {
   body .myHeader .myUl {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 0;
+  }
+  body .myHeader .myUl .myLi {
+    color: #c7c7cc;
+    border-bottom: #00171f solid 3px;
+    font-weight: 600;
+    transition: 0.5s;
+  }
+  body .myHeader .myUl .myLi:hover {
+    color: #e8f1f3;
+    border-bottom: #00a8e8 solid 3px;
+  }
+  body .myHeader .myUl .myLi:active {
+    color: #e8f1f3;
+    border-bottom: #00a8e8 solid 3px;
+  }
+  body .myHeader .myUl .activeLi {
+    border-bottom: 3px solid #007ea7;
+    color: #e8f1f3;
+    font-weight: bold;
+  }
+  body .myHeader .NavCvDm {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+  }
+}
+@media (min-width: 768px) and (min-width: 768px) {
+  body .myHeader .NavCvDm {
+    order: 1;
+  }
+}
+@media (min-width: 768px) {
+  body .myHeader .NavCvDm .myCv {
+    color: #e8f1f3;
+    border-radius: 16px;
+    padding: 2px 8px 2px 8px;
+    background-color: #007ea7;
+    transition: 0.5s;
+  }
+  body .myHeader .NavCvDm .myCv:hover {
+    background-color: #00a8e8;
+  }
+  body .myHeader .NavCvDm .cToggle1 {
+    background-color: #e8f1f3;
+  }
+  body .myHeader .NavCvDm .cToggle1:checked {
+    background-color: #007ea7;
+  }
+  body .startPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  body .startPage .section1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  body .startPage .section1 .firstH1 {
+    color: #e8f1f3;
+    font-size: 50px;
+  }
+  body .startPage .section1 .firstH1 .myName {
+    color: #00a8e8;
+    font-weight: 600;
+  }
+  body .startPage .section1 .firstP {
+    font-size: x-large;
+    color: #00a8e8;
+  }
+  body .startPage .section2 {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  body .startPage .section2 .contLang {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
   }
-  body .myHeader .myUl .myLi {
-    border-bottom: #00171f solid 3px;
-  }
-  body .myHeader .myNavRight {
-    order: -1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-  }
-  body .myHeader .myNavRight .myCv {
-    color: #e8f1f3;
-    border-radius: 16px;
-    padding: 2px 4px 2px 4px;
-  }
-  body .startPage {
-    width: 100%;
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
-  }
-  body .startPage .firstH1 {
-    font-size: 50px;
-    font-weight: 600;
-  }
-  body .startPage .firstP {
-    font-size: x-large;
-  }
-  body .startPage .contLang {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  body .startPage .contLang .SecondP {
+  body .startPage .section2 .contLang .SecondP {
     font-size: 30px;
   }
-  body .startPage .contLang .lang {
+  body .startPage .section2 .contLang .lang {
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    align-items: center;
+    gap: 10%;
   }
-  body .startPage .contLang .lang .imgLang {
-    width: 50%;
+  body .startPage .section2 .contLang .lang .myLang {
+    background-color: #c7c7cc;
+    border-radius: 10px;
+    transition: 0.4s;
+  }
+  body .startPage .section2 .contLang .lang .myLang .imgLang {
+    width: 35%;
+    filter: grayscale(1);
+    transition: 0.4s;
+  }
+  body .startPage .section2 .contLang .lang .myLang:hover {
+    background-color: #e8f1f3;
+  }
+  body .startPage .section2 .contLang .lang .myLang:hover .imgLang {
+    filter: grayscale(0);
   }
   body .startPage .imgProf {
     width: 50%;
     border-radius: 50%;
+    border: solid 5px #00a8e8;
   }
   body .myFooter {
-    position: relative;
+    background-color: #007ea7;
+    color: #e8f1f3;
+    text-align: center;
+    width: 100%;
+    bottom: 0px;
+    margin-top: 20px;
   }
 }
 .mainEmpty {
-  width: 100vh;
+  width: 100%;
 }
 .mainEmpty .mainCont {
   padding: 5%;
@@ -287,19 +423,25 @@ body .myFooter {
   font-weight: 600;
   padding-bottom: 5%;
 }
+@media (max-width: 920px) {
+  .mainEmpty .mainCont .aboutH1 {
+    font-size: 80px;
+  }
+}
+@media (max-width: 768px) {
+  .mainEmpty .mainCont .aboutH1 {
+    font-size: 60px;
+  }
+}
+@media (max-width: 520px) {
+  .mainEmpty .mainCont .aboutH1 {
+    font-size: 50px;
+  }
+}
 .mainEmpty .mainCont .aboutHsec {
   font-size: 30px;
 }
 
-@media (max-width: 600px) {
-  .mainEmpty .mainCont .aboutH1 {
-    font-size: 30px;
-    padding-bottom: 5%;
-  }
-  .mainEmpty .mainCont .aboutHsec {
-    font-size: 25px;
-  }
-}
 .mainEmpty {
   width: 100%;
 }
@@ -320,24 +462,94 @@ body .myFooter {
   align-items: center;
   background-color: rgba(0, 23, 31, 0.5490196078);
   text-align: center;
-  width: 25%;
-  height: 220px;
+  width: 30%;
+  height: 250px;
 }
-.mainEmpty .mainCont .sectCardCont .sectCard .sectCardImg {
+.mainEmpty .mainCont .sectCardCont .sectCard .sectCardContImg {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 300px;
+}
+.mainEmpty .mainCont .sectCardCont .sectCard .sectCardContImg .sectCardImg {
   width: 35%;
-  opacity: 0.8;
+  opacity: 0.6;
   transition: 0.5s;
 }
-.mainEmpty .mainCont .sectCardCont .sectCard .sectCardImg:hover {
-  opacity: 1;
-  width: 40%;
-}
 .mainEmpty .mainCont .sectCardCont .sectCard .sectCardTitle {
+  width: 80%;
   color: #e8f1f3;
   font-weight: 600;
+  transition: 0.5s;
+  opacity: 0.6;
 }
 .mainEmpty .mainCont .sectCardCont .sectCard .sectCardText {
   font-size: 20px;
+  color: #e8f1f3;
+  font-weight: 600;
+  padding-top: 30px;
+  opacity: 0;
+  transition: 0.5s;
+}
+.mainEmpty .mainCont .sectCardCont .sectCard .sectCardTitle2 {
+  color: #e8f1f3;
+  font-weight: 600;
+  transition: 0.5s;
+}
+.mainEmpty .mainCont .sectCardCont .sectCard:hover .sectCardImg {
+  padding-top: 20px;
+  width: 40%;
+  opacity: 1;
+}
+.mainEmpty .mainCont .sectCardCont .sectCard:hover .sectCardTitle {
+  opacity: 1;
+  font-size: 21px;
+  width: 90%;
+}
+.mainEmpty .mainCont .sectCardCont .sectCard:hover .sectCardText {
+  opacity: 1;
+  padding-top: 20px;
+}
+.mainEmpty .mainCont .sectCardCont .sectCard:hover .sectCardTitle2 {
+  opacity: 0;
+  padding-top: 30px;
+}
+@media (max-width: 768px) {
+  .mainEmpty .mainCont .sectCardCont {
+    pointer-events: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+  }
+  .mainEmpty .mainCont .sectCardCont .sectCard {
+    width: 60%;
+  }
+  .mainEmpty .mainCont .sectCardCont .sectCard .sectCardContImg {
+    width: 300px;
+  }
+  .mainEmpty .mainCont .sectCardCont .sectCard .sectCardContImg .sectCardImg {
+    width: 35%;
+    opacity: 0.6;
+    transition: 0.5s;
+  }
+  .mainEmpty .mainCont .sectCardCont .sectCard .sectCardTitle {
+    opacity: 1;
+  }
+  .mainEmpty .mainCont .sectCardCont .sectCard a {
+    order: 1;
+  }
+  .mainEmpty .mainCont .sectCardCont .sectCard a .sectCardText {
+    opacity: 1;
+    font-size: 16px;
+  }
+  .mainEmpty .mainCont .sectCardCont .sectCard .sectCardTitle2 {
+    opacity: 1;
+    font-size: 16px;
+    padding-top: 15px;
+  }
 }
 .mainEmpty .mainCont .knowH2 {
   padding: 5% 0 0 0;
@@ -354,7 +566,13 @@ body .myFooter {
   width: 100%;
   height: 100px;
 }
-.mainEmpty .contImg1 .divSubcnt1 .imgKno {
+.mainEmpty .contImg1 .divSubcnt1 .contImgS {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mainEmpty .contImg1 .divSubcnt1 .contImgS .imgKno {
   vertical-align: middle;
   width: 80%;
   aspect-ratio: 3/2;
@@ -363,50 +581,22 @@ body .myFooter {
   opacity: 0.6;
   transition: 0.5s;
 }
-.mainEmpty .contImg1 .divSubcnt1 .imgKno:hover {
+.mainEmpty .contImg1 .divSubcnt1 .contImgS .nameSkill {
+  font-size: 20px;
+  color: #e8f1f3;
+  opacity: 0;
+  transition: 0.5s;
+}
+.mainEmpty .contImg1 .divSubcnt1 .contImgS:hover .imgKno {
   opacity: 1;
   width: 90%;
   filter: grayscale(0);
   position: relative;
 }
-
-@media (max-width: 720px) {
-  .mainEmpty {
-    width: 100%;
-  }
-  .mainEmpty .mainCont {
-    font-size: 30px;
-  }
-  .mainEmpty .mainCont .sectCardCont {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 100%;
-  }
-  .mainEmpty .mainCont .sectCardCont .sectCard {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    margin-bottom: 10%;
-    text-align: center;
-    width: 70%;
-    height: 220px;
-  }
-  .mainEmpty .mainCont .sectCardCont .sectCard .sectCardImg {
-    width: 45%;
-  }
-  .mainEmpty .mainCont .sectCardCont .sectCard .sectCardTitle {
-    color: #e8f1f3;
-    font-weight: 600;
-  }
-  .mainEmpty .mainCont .sectCardCont .sectCard .sectCardText {
-    font-size: 15px;
-  }
-  .mainEmpty .mainCont .knowH2 {
-    font-size: 20px;
-  }
+.mainEmpty .contImg1 .divSubcnt1 .contImgS:hover .nameSkill {
+  opacity: 1;
+}
+@media (max-width: 768px) {
   .mainEmpty .contImg1 {
     display: flex;
     flex-direction: row;
@@ -415,19 +605,20 @@ body .myFooter {
     flex-wrap: wrap;
   }
   .mainEmpty .contImg1 .divSubcnt1 {
-    width: 33%;
+    width: fit-content;
   }
-  .mainEmpty .contImg1 .divSubcnt1 .imgKno {
+  .mainEmpty .contImg1 .divSubcnt1 .contImgS .imgKno {
     opacity: 1;
-    width: 80%;
-    vertical-align: auto;
-    padding: 5%;
-    aspect-ratio: 3/2;
-    object-fit: contain;
+    transition: 0;
     filter: grayscale(0);
+    width: 80px;
   }
-  .mainEmpty .contImg1 .divSubcnt1 .imgKno:hover {
-    width: 80%;
+  .mainEmpty .contImg1 .divSubcnt1 .contImgS .nameSkill {
+    opacity: 1;
+    font-size: 13px;
+  }
+  .mainEmpty .contImg1 .divSubcnt1 .contImgS:hover .imgKno {
+    width: 80px;
   }
 }
 

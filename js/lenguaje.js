@@ -15,20 +15,23 @@ let text2Esp = `
 <section class="aboutHsec">
     <section class="sectCardCont">
         <div class="card sectCard">
-            <img class=" sectCardImg" src="img/icons/icon1.png" alt="Desarrollo y Maquetado">
+        <div class="sectCardContImg">
+            <img class=" sectCardImg" src="img/icons/icon1.png" alt="Desarrollo y Maquetado"></div>
             <h5 class="sectCardTitle">Desarrollo y Maquetado de estructuras web</h5>
         </div>
         <div class="card sectCard">
-            <img class=" sectCardImg" src="img/icons/icon2.png" alt="Codificar con lenguajes">
+        <div class="sectCardContImg">
+            <img class=" sectCardImg" src="img/icons/icon2.png" alt="Codificar con lenguajes"></div>
             <h5 class="sectCardTitle">Codificar con lenguajes de programacion</h5>
         </div>
         <div class="card sectCard">
-            <img class=" sectCardImg" src="img/icons/icon3.png" alt="tipos deLibrerias">
-            <h5 class="sectCardTitle">Implementación de distintos tipos deLibrerias</h5>
+        <div class="sectCardContImg">
+            <img class=" sectCardImg" src="img/icons/icon3.png" alt="tipos deLibrerias"></div>
+            <h5 class="sectCardTitle">Implementación de distintos tipos de Librerias</h5>
         </div>
     </section>
   </section>
-<h2 class="knowH2">Estos son algunos de los distintos tipos de lenguajes,librerias y programas que utilizo a la hora de programar</h2>
+<h2 class="knowH2">Estos son algunos de los distintos tipos de lenguajes,librerias y programas que utilizo a la hora de programar:</h2>
 </article>`;
 
 let text3Esp = `
@@ -36,26 +39,26 @@ let text3Esp = `
 <h1 class="aboutH1">Contacto_</h1>
 <p>Mi bandeja de entrada está siempre abierta para consultas, proyectos o si simplemente querés pasar a saludar. También está mi contacto de Linkedin y mi repositorio de Github, para que puedas ver todos mis trabajos ¡Te responderé lo antes posible! 👋</p>
 <section class="aboutHsec">
-    <section class="sectCardCont">
+    <section class=" sectCardCont">
         <div class="card sectCard">
-            <img class="card-img-top sectCardImg" src="img/contact/linkedin.png" alt="Linkedin">
-            <div class="card-body">
-                <h5 class="card-title sectCardTitle">Linkedin</h5>
-                <a href="https://www.linkedin.com/in/agustinfcoiro/" target="_blank"><p class="sectCardText">in/agustinfcoiro</p></a>
+            <div class="sectCardContImg">
+                <img class="sectCardImg" src="img/contact/linkedin.png" alt="linkedin">
+                <a href="https://www.linkedin.com/in/agustinfcoiro/" target="_blank"><h5 class="sectCardText">in/agustinfcoiro</h5></a>
+                <h4 class="sectCardTitle2">Linkedin</h4>
             </div>
         </div>
         <div class="card sectCard">
-            <img class="card-img-top sectCardImg" src="img/contact/email.png" alt="e-mail">
-            <div class="card-body">
-                <h5 class="card-title sectCardTitle">e-mail</h5>
-                </html> <a href="mailto:agustinfcoiro@gmail.com" target="_blank"><p class="card-text sectCardText">agustinfcoiro@gmail.com</p></a>
+            <div class="sectCardContImg">
+                <img class="sectCardImg" src="img/contact/email.png" alt="e-mail">
+                <a href="mailto:agustinfcoiro@gmail.com" target="_blank"><h5 class="sectCardText">agustinfcoiro@gmail.com</h5></a>
+                <h4 class="sectCardTitle2">e-mail</h4>
             </div>
         </div>
         <div class="card sectCard">
-            <img class="card-img-top sectCardImg" src="img/contact/github.png" alt="Github">
-            <div class="card-body">
-                <h5 class="card-title sectCardTitle">Github</h5>
-              <a href="https://github.com/AFCoiro" target="_blank"><p class="card-text sectCardText">github.com/AFCoiro</p></a>
+            <div class="sectCardContImg">
+                <img class="sectCardImg" src="img/contact/github.png" alt="github">
+                <a href="https://github.com/AFCoiro" target="_blank"><h5 class="sectCardText">github.com/AFCoiro</h5></a>
+                <h4 class="sectCardTitle2">Github</h4>
             </div>
         </div>
     </section>
@@ -78,15 +81,15 @@ let text2Ing = `
 <section class="aboutHsec">
     <section class="sectCardCont">
         <div class="card sectCard">
-            <img class=" sectCardImg" src="img/icons/icon1.png" alt="Development and Layout">
+            <div class="sectCardContImg"><img class="sectCardImg" src="img/icons/icon1.png" alt="Development and Layout"></div>
             <h5 class="sectCardTitle">Development and Layout of web structures</h5>
         </div>
         <div class="card sectCard">
-            <img class=" sectCardImg" src="img/icons/icon2.png" alt="programming languages">
+        <div class="sectCardContImg"><img class="sectCardImg" src="img/icons/icon2.png" alt="programming languages"></div>
             <h5 class="sectCardTitle">Code with programming languages</h5>
         </div>
         <div class="card sectCard">
-            <img class=" sectCardImg" src="img/icons/icon3.png" alt="Implementation of Libraries">
+        <div class="sectCardContImg"><img class="sectCardImg" src="img/icons/icon3.png" alt="Implementation of Libraries"></div>
             <h5 class="sectCardTitle">Implementation of different kinds of Libraries</h5>
         </div>
     </section>
@@ -100,26 +103,26 @@ let text3Ing = `
 <p>You are welcomed to come say hi, ask questions or discuss about any project you have in mind.Also, you have my personal Linkedin account and, if you want to check out all my projects, my Github repository. 
 I'll get back to you as soon as possible! 👋</p>
 <section class="sectCardCont">
-      <div class="card sectCard" style="width: 18rem;">
-        <img class="card-img-top sectCardImg" src="img/contact/linkedin.png" alt="linkedin">
-        <div class="card-body">
-            <h5 class="card-title sectCardTitle">Linkedin</h5>
-            <a href="https://www.linkedin.com/in/agustinfcoiro/" target="_blank"><p class="sectCardText">in/agustinfcoiro</p></a>
+    <div class="card sectCard">
+        <div class="sectCardContImg">
+            <img class="sectCardImg" src="img/contact/linkedin.png" alt="linkedin">
+            <a href="https://www.linkedin.com/in/agustinfcoiro/" target="_blank"><h5 class="sectCardText">in/agustinfcoiro</h5></a>
+            <h4 class="sectCardTitle2">Linkedin</h4>
         </div>
-      </div>
-      <div class="card sectCard" style="width: 18rem;">
-        <img class="card-img-top sectCardImg" src="img/contact/email.png" alt="e-mail">
-        <div class="card-body">
-            <h5 class="card-title sectCardTitle">e-mail</h5>
-            </html> <a href="mailto:agustinfcoiro@gmail.com" target="_blank"><p class="card-text sectCardText">agustinfcoiro@gmail.com</p></a>
+    </div>
+    <div class="card sectCard">
+        <div class="sectCardContImg">
+            <img class="sectCardImg" src="img/contact/email.png" alt="e-mail">
+            <a href="mailto:agustinfcoiro@gmail.com" target="_blank"><h5 class="sectCardText">agustinfcoiro@gmail.com</h5></a>
+            <h4 class="sectCardTitle2">e-mail</h4>
         </div>
-      </div>
-      <div class="card sectCard" style="width: 18rem;">
-        <img class="card-img-top sectCardImg" src="img/contact/github.png" alt="github">
-        <div class="card-body">
-            <h5 class="card-title sectCardTitle">Github</h5>
-            <a href="https://github.com/AFCoiro" target="_blank"><p class="card-text sectCardText">github.com/AFCoiro</p></a>
+    </div>
+    <div class="card sectCard">
+        <div class="sectCardContImg">
+            <img class="sectCardImg" src="img/contact/github.png" alt="github">
+            <a href="https://github.com/AFCoiro" target="_blank"><h5 class="sectCardText">github.com/AFCoiro</h5></a>
+            <h4 class="sectCardTitle2">Github</h4>
         </div>
-      </div>
+    </div>
 </section>
 </article>`;

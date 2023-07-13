@@ -11,23 +11,89 @@
             @include myDisplayFlex(flex,column, space-around,center);
             background-color: $dark-color-t;
             text-align: center;
-            width: 25%;
-            height:220px;
-            .sectCardImg{
-              width: 35%;
-              opacity: 0.8;
-              transition: 0.5s;
-              &:hover{
-                opacity: 1;
-                width: 40%;
+            width: 30%;
+            height:250px;
+            .sectCardContImg{
+              @include myDisplayFlex(flex,column, space-around,center);
+              width: 300px;
+              .sectCardImg{
+                width: 35%;
+                opacity: 0.6;
+                transition: 0.5s;
               }
             }
             .sectCardTitle{
-              color: $light-color;
+              width:80%;
+              color:$light-color;
               font-weight: 600;
+              transition: 0.5s;
+              opacity: 0.6;
+
             }
             .sectCardText{
               font-size: 20px;
+              color:$light-color;
+              font-weight: 600;
+              padding-top:30px;
+              opacity:0;
+              transition: 0.5s;
+            }
+            .sectCardTitle2{
+              color:$light-color;
+              font-weight: 600;
+              transition: 0.5s;
+            }
+            &:hover{
+              .sectCardImg{
+                padding-top:20px;
+                width: 40%;
+                opacity: 1;
+              }
+              .sectCardTitle{
+                opacity: 1;
+                font-size: 21px;
+                width:90%;
+
+              }
+              .sectCardText{
+              opacity:1;
+              padding-top:20px;
+            }
+            .sectCardTitle2{
+              opacity: 0;
+              padding-top:30px;
+            }
+          }
+          }
+          @media (max-width:768px) {
+            pointer-events: none;
+            @include myDisplayFlex(flex,column, space-evenly,center);
+            gap:20px;
+            .sectCard{
+              width: 60%;
+              .sectCardContImg{
+                width: 300px;
+                .sectCardImg{
+                  width: 35%;
+                  opacity: 0.6;
+                  transition: 0.5s;
+                }
+              }
+              .sectCardTitle{
+                opacity: 1;
+              }
+              a{
+                order:1;
+                .sectCardText{
+                  opacity:1;
+                  font-size:16px;
+                }
+              }
+              .sectCardTitle2{
+                opacity: 1;
+                font-size:16px;
+                padding-top:15px;
+              }
             }
           }
       }
@@ -38,85 +104,122 @@
       }
     }
     .contImg1{
-      @include myDisplayFlex(flex,row, center,normal);
+        @include myDisplayFlex(flex,row, center,normal);
         .divSubcnt1{
           width: 100%;
           height: 100px;
-          .imgKno{
-            vertical-align: middle;
-            width: 80%;
-            aspect-ratio: 3/2;
-            object-fit: contain;
-            filter: grayscale(1);
-            opacity: 0.6;
-            transition: 0.5s;
-            &:hover{
-                opacity: 1;
-                width: 90%;
-                filter: grayscale(0);
-                position: relative;
+          .contImgS{
+            @include myDisplayFlex(flex,column,center,center);
+            .imgKno{
+              vertical-align: middle;
+              width: 80%;
+              aspect-ratio: 3/2;
+              object-fit: contain;
+              filter: grayscale(1);
+              opacity: 0.6;
+              transition: 0.5s;
             }
+            .nameSkill{
+              font-size: 20px;
+              color:$light-color;
+              opacity: 0;
+              transition: 0.5s;
+            }
+            &:hover{
+              .imgKno{
+              opacity: 1;
+              width: 90%;
+              filter: grayscale(0);
+              position: relative;
+              }
+              .nameSkill{
+                opacity: 1;
+              }
+            }
+          }
+        }
+        @media (max-width: 768px){
+          @include myDisplayFlex(flex,row,center,center);
+          flex-wrap:wrap;
+          .divSubcnt1{
+            width: fit-content;
+          .contImgS{
+            .imgKno{
+              opacity:1;
+              transition: 0;
+              filter: grayscale(0);
+              width: 80px;
+              }
+              .nameSkill{
+                opacity:1;
+                font-size: 13px;
+              }
+              &:hover{
+                .imgKno{
+                  width: 80px;
+                }
+              }
+          }
         }
         }
-      }
-
+    }
 }
 
                   
-@media (max-width: 720px){
-  .mainEmpty{
-    width: 100%;
-    .mainCont{
-      font-size: 30px;
-      .sectCardCont{
-        @include myDisplayFlex(flex,column, space-evenly,center);
-        height: 100%;
-          .sectCard{
-            @include myDisplayFlex(flex,column, space-around,center);
-            margin-bottom: 10%;
-            text-align: center;
-            width: 70%;
-            height:220px;
-            .sectCardImg{
-              width: 45%;
-            }
-            .sectCardTitle{
-              color: $light-color;
-              font-weight: 600;
-            }
-            .sectCardText{
-              font-size: 15px;
+//  @media (max-width: 720px){
+//   .mainEmpty{
+//     width: 100%;
+//     .mainCont{
+//       font-size: 30px;
+//       .sectCardCont{
+//         @include myDisplayFlex(flex,column, space-evenly,center);
+//         height: 100%;
+//           .sectCard{
+//             @include myDisplayFlex(flex,column, space-around,center);
+//             margin-bottom: 10%;
+//             text-align: center;
+//             width: 70%;
+//             height:220px;
+//             .sectCardImg{
+//               width: 45%;
+//             }
+//             .sectCardTitle{
+//               color: $light-color;
+//               font-weight: 600;
+//             }
+//             .sectCardText{
+//               font-size: 15px;
               
-            }
-          }
-      }
-      .knowH2{
-        font-size: 20px;
-      }
+//             }
+//           }
+//       }
+//       .knowH2{
+//         font-size: 20px;
+//       }
 
-    }
-    .contImg1{
-      @include myDisplayFlex(flex,row,center,center);
-      flex-wrap:wrap;
-      .divSubcnt1{
-        width: 33%;
-        .imgKno{
-          opacity: 1;
-          width: 80%;
-          vertical-align:auto;
-          padding: 5%;
-          aspect-ratio: 3/2;
-          object-fit: contain;
-          filter: grayscale(0);
-          &:hover{
-            width: 80%;
-          }        
-      }
-      }
-    }
+//     }
+//     .contImg1{
+//       @include myDisplayFlex(flex,row,center,center);
+//       flex-wrap:wrap;
+//       .divSubcnt1{
+//         width: 33%;
+//         .imgKno{
+//           opacity: 1;
+//           width: 80%;
+//           vertical-align:auto;
+//           padding: 5%;
+//           aspect-ratio: 3/2;
+//           object-fit: contain;
+//           filter: grayscale(0);
+//           &:hover{
+//             width: 80%;
+//           }        
+//       }
+//       }
+//     }
 
-}
-}          
+// }
+// }          
 
         
             

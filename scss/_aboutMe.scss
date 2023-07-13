@@ -1,13 +1,22 @@
  @import "var";
 
  .mainEmpty{
-    width: 100vh;
+    width: 100%;
     .mainCont{
         padding: 5%;
         .aboutH1{
             font-size: 100px;
             font-weight: 600;
-            padding-bottom: 5%;
+            padding-bottom: 5%; 
+            @media (max-width: 920px){
+                font-size: 80px;
+            }
+            @media (max-width: 768px){
+                font-size: 60px;
+            }
+            @media (max-width: 520px){
+                font-size: 50px;
+            }
         }
         .aboutHsec{
             font-size: 30px;
@@ -16,16 +25,4 @@
     }
  }
 
- @media (max-width: 600px){
-    .mainEmpty{
-        .mainCont{
-            .aboutH1{
-                font-size: 30px;
-                padding-bottom: 5%;
-            }
-            .aboutHsec{
-                font-size: 25px;
-            }
-        }
-     }
- }
+// 

@@ -30,7 +30,7 @@ myLang.forEach( Lang => {Lang.addEventListener('click',()=>{
             myLi[0].innerText="About Me";
             myLi[1].innerText="Knowledge";
             myLi[2].innerText="Contact";
-            myCv.innerText="Download Resume";
+            myCv.innerText="My Resume";
         }
         mainEmpty.innerHTML= main1;
         }

@@ -22,7 +22,7 @@
                 border-bottom: $primary-color-hv solid 3px; 
             }
         }
-        .myNavRight{
+        .NavCvDm{
             .myCv{
                 color: $dark-color-hv;
                 border-radius: 16px;
@@ -68,7 +68,13 @@
                 .sectCard{
                     background-color: $light-color-hv;
                     .sectCardText{
-                        color: $light-color;
+                        color:$primary-color-hv;
+                    }
+                    .sectCardTitle{
+                        color:$primary-color-hv;
+                    }
+                    .sectCardTitle2{
+                        color:$primary-color-hv;
                     }
                 }
             }
@@ -76,7 +82,16 @@
                 color: $dark-color-hv;
             }
         }
-     }
+        .contImg1{
+            .divSubcnt1{
+                .contImgS{
+                    .nameSkill{
+                        color:$dark-color-hv
+                    }
+                }
+            }
+        }
+    }
      .myFooter{
         background-color: $light-color-hv;
         color: $dark-color-hv;
