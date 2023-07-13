@@ -8,6 +8,8 @@
 
 <p>Otro aspecto clave de este proyecto ha sido la implementación de una arquitectura de SPA (Single Page Application) utilizando JavaScript sin utilizar bibliotecas o frameworks como React. Se ha aprovechado la capacidad de JavaScript para manipular el DOM y controlar las interacciones del usuario de manera eficiente, permitiendo una actualización dinámica y fluida del texto visible.</p>
 
+<br>
+  
 # 🛠️ Tecnologías utilizadas
 
 <ul> 
@@ -16,7 +18,8 @@
 <li>Javascript</li>
 </ul>
 
-
+<br>
+  
 # 📁 Acceso al proyecto
 
  ## 👉 https://afcoiro.github.io/cv_agustin-coiro-/index.html
