@@ -14,7 +14,7 @@
 
 <ul> 
 <li>Html</li>
-<li>css/scss</li>
+<li>Css/Scss</li>
 <li>Javascript</li>
 </ul>
 
