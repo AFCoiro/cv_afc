@@ -1,5 +1,7 @@
 <h1 align="center">Mi CV: Agustín Coiro</h1>
 
+![cv](https://github.com/AFCoiro/cv_agustin-coiro/assets/95722600/a99710cc-dfcd-4dbe-9615-56fb13db9376)
+
 # 📝 Descripción del proyecto
 
 <p>El presente proyecto se ha desarrollado con un enfoque prioritario en el uso de JavaScript. Uno de los principales aspectos abordados ha sido la implementación de un modo oscuro en la interfaz, creado clases específicas que modifican los estilos y colores de los elementos de la página. Al activar el modo oscuro, se aplica una clase a nivel global que afecta a todos los elementos relevantes, asegurando una transición suave y coherente en toda la interfaz.</p>
